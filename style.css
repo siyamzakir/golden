@@ -1,0 +1,805 @@
+
+/*==============Default CSS==================*/
+/*==============Default CSS==================*/
+/*==============Default CSS==================*/
+html,
+body { height: 100% }
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+p {
+    color: #5b5b5b;
+    margin: 0;
+}
+a {
+    color: #0083e8;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+ul {
+    margin: 0;
+}
+li {
+    list-style: none;
+    
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/* Main Layout style */
+.container {
+    max-width: 992px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+
+
+
+/*==============Custom CSS==================*/
+/*==============Custom CSS==================*/
+/*==============Custom CSS==================*/
+/*==============Custom CSS==================*/
+
+
+/*==================================================
+ * Header Area
+ * ===============================================*/
+
+.top-area {
+    width: 100%;
+    float: left;
+}
+
+.header-area {
+    background-color: transparent;
+}
+.header-top {
+    
+}
+
+.logo {
+    margin-top: 45px;
+}
+
+.mainmenu {
+    margin-top: 45px;
+}
+.mainmenu li:hover a {
+    background: transparent;
+    color: #FED136;
+    transition: 0.5s;
+    
+}
+.mainmenu li a {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+}
+
+.header-text {
+    padding: 175px 0 150px;
+    text-align: center;
+}
+.header-text h2 {
+    font-size: 38px;
+    font-style: italic;
+    font-family: 'Droid Serif', serif;
+    color: #fff;
+    font-weight: normal;
+}
+.header-text h1 {
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-button {
+    background-color: #fed136;
+    border-radius: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* For Collapse or toggle */
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.sticky-wrapper{
+    width: 100%;
+    top: 0;
+   z-index:999;
+    position: absolute;
+    
+}
+
+.top-area-bg {
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header-text-area {
+    position: relative;
+    padding-top: 80px;
+}
+.slide-bg-1 {
+  background-image: url(img/header-bg.jpg)
+}
+.slide-bg-2 {
+    background-image: url(img/header-bg1.jpg)
+}
+.slide-bg-3 {
+    background-image: url(img/header-bg2.jpg)
+}
+.slide-bg-4 {
+    background-image: url(img/header-bg4.jpg)
+}
+
+.left-slide.fawesome-control {
+  color: #fff;
+  font-size: 80px;
+  margin-top: -70px;
+  position: absolute;
+  top: 50%;
+    left: 30px;
+    opacity: .2
+}
+.left-slide.fawesome-control:hover {
+    opacity: 1;
+    color: #fff;
+    transition: all ease .5s;
+}
+.right-slide.fawesome-control {
+  color: #fff;
+  font-size: 80px;
+  margin-top: -70px;
+  position: absolute;
+  top: 50%;
+    right: 30px;
+    opacity: .2
+}
+.right-slide.fawesome-control:hover {
+    opacity: 1;
+    color: #fff;
+    transition: .5s;
+}
+
+#top-slide-carousel.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .item,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .active,
+#top-slide-carousel.carousel-fade .carousel-inner .next.left,
+#top-slide-carousel.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .next,
+#top-slide-carousel.carousel-fade .carousel-inner .prev,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+#top-slide-carousel.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.mainmenu {
+    position: relative;
+    
+}
+.mainmenu ul.nav.navbar-nav {
+  float: none;
+  text-align: right;
+}
+.mainmenu ul.nav.navbar-nav li {
+    display: inline-block;
+    float: none;
+    position: relative;
+}
+.mainmenu ul.nav.navbar-nav li:hover a {
+    background: none;
+}
+.mainmenu ul.nav.navbar-nav li a{
+    
+}
+.mainmenu ul.nav.navbar-nav li a:focus{
+    background: none;
+}
+.mainmenu ul.nav.navbar-nav li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+}
+
+.is-sticky .header-area {
+    background: #111;
+    
+}
+.is-sticky .logo {
+    margin-top: 20px;
+    
+}
+.is-sticky .mainmenu {
+    margin: 20px 0;   
+}
+ .is-sticky .logo, .is-sticky .mainmenu, .is-sticky .navbar-header {
+      transition: all 0.35s;
+    }
+
+.is-sticky .header-area:after {
+    background: #000;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    z-index: -1;
+}
+.is-sticky .logo img {
+
+    width: auto;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a{
+    color: #D09900;
+    
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a:hover {
+    color: #fff;
+    
+}
+.is-sticky .header-area, .logo img, .mainmenu ul.nav.navbar-nav li a {transition: 0.5s ease-in-out;}
+
+/*==================================================
+ * Service Area
+ * ===============================================*/
+
+.service-area {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.service-item {
+    margin-top: 80px;
+}
+.service-item img {
+  margin-bottom: 25px;
+}
+/*==================================================
+ * Portfolio Area
+ * ===============================================*/
+
+.portfolio-area {
+    width: 100%;
+    float: left;
+    background-color: #f7f7f7 !important; 
+}
+.portfolio-text {
+    margin-bottom: 75px;
+}
+.portfolio-area h4, h3, p {
+    margin: 0;
+}
+
+.box {
+    background: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+    display: inline-block;
+}
+.box img {
+    width: 100%;
+}
+.box-text {
+    padding: 20px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    background: #37363B;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    cursor: auto;
+    overflow: hidden;
+}
+
+.box a h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 150px;
+}
+.box-text p {
+    font-style: italic;
+}
+.box a h3:hover {
+    color: #0083e8;
+    transition: 0.5s ease-in-out;
+}
+.box:hover > .overlay {
+  opacity: 1;
+}
+
+
+
+
+.section-style {
+  background: #FFF;
+  margin: 40px auto;
+}
+/*Section style Effect*/
+
+.effect {
+  position: relative;
+}
+
+.effect:before,
+.effect:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.effect:after {
+ left: auto;
+right: 20px;
+transform: rotate(8deg);
+}
+
+
+/*==================================================
+ * About Area
+ * ===============================================*/
+.about-area {
+    width: 100%;
+    float: left;
+}
+
+.about-top {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.about-item {
+  text-align: center;
+    margin-bottom: 50px;
+}
+.item-text-right{
+   text-align: right;
+}
+.item-text-left{
+   text-align: left;
+}
+
+.about-bttn-sec {
+    text-align: center;
+}
+.about-bttn-sec p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.about-button {
+    background-color: #fed136;
+    border: 8px solid #f1f1f1;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    float: none;
+    font-size: 18px;
+    font-weight: bold;
+    height: 180px;
+    line-height: 1.5;
+    list-style: outside none none;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    width: 180px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.about-button:hover p {
+   color: #111;
+    transition: all 0.5s ease 0s;
+    padding-top: 5px;
+    
+}
+/*==================================================
+ * Team Area
+ * ===============================================*/
+.team-area {
+    width: 100%;
+    float: left;
+    background-color: #f9f9f9;
+}
+
+.team-top {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.team-item {
+    text-align: center;
+}
+.team-item img {
+  border: 8px solid #f1f1f1;
+}
+
+.team-item h4 {
+  margin: 0;
+}
+.team-item ul {
+   margin-top: 20px;
+    padding: 0;
+    text-align: center;
+}
+.team-item ul li {
+    border: 2px solid#000;
+    border-radius: 50%;
+    float: none;
+    height: 35px;
+    list-style: outside none none;
+    margin: 0 auto;
+    width: 35px;
+    display: inline-block;
+}
+
+.team-item ul li a {
+    color: #000;
+    font-size: 25px;
+    padding: 0;
+    text-align: center;
+}
+
+.team-item ul li:hover {
+    background-color: #111;
+    color: #fff;
+    transition: 0.5s;
+    
+}
+.team-item ul li:hover a {
+   color: #fff;
+    transition: 0.5s;
+}
+
+.about-btn-text {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 35px;
+    text-align: center;
+}
+/*==================================================
+ * Client Area
+ * ===============================================*/
+
+.client-area {
+    float: left;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.client-list li {
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+}
+/*==================================================
+ * Contact Area
+ * ===============================================*/
+
+.contact-area {
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+  
+}
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-bg {
+    background-image: url(img/contact-bg.jpg);
+    z-index: -1;
+    
+}
+.contact-area h2 {
+    color: #fff;
+}
+
+.contact-top {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.form-control {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: block;
+  font-size: 14px;
+    text-transform: uppercase;
+  height: 34px;
+  line-height: 1.42857;
+  margin: 30px 0;
+  padding: 1px 20px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+}
+.contact_form input {
+    text-transform: uppercase;  
+}
+
+
+.contact-btn {
+    background-color: #fed136;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    float: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px auto 0;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+    width: 240px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.contact-btn span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.contact-btn:hover span {
+  padding-right: 25px;
+}
+
+.contact-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*==================================================
+ * Footer Area
+ * ===============================================*/
+
+.footer-area {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    padding: 45px 0;
+}
+.footer-area p {
+    display: inline-block;
+    float: left;
+}
+
+.footer-area ul {
+    float: left;
+    padding-left: 70px;
+}
+
+.footer-area li {
+    background-color: #222;
+    border-radius: 50%;
+    float: left;
+    height: 30px;
+    list-style: outside none none;
+    margin: 0 5px;
+    width: 30px;
+   
+}
+.footer-area ul li a {
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    padding-left: 9px;
+    text-align: center;
+   
+}
+
+.footer-area ul li:hover {
+    background-color: inherit;
+    transition: 0.5s;
+}
+.footer-area ul li:hover a {
+    color: #222;
+    transition: 0.5s;
+}
+
+
+
+
+
+/*==================================================
+ * CD Top /top scroll
+ * ===============================================*/
+a, a:hover, a:focus{outline:none}
+ /* top scroll  */
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  / image replacement properties /
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #FED136 url(img/cd-top-arrow.svg) no-repeat center 50%;
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  /* visibility: hidden; */
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+    z-index: 999;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  / the button becomes visible /
+  visibility: visible;
+  opacity: 1;
+    
+}
+
+.cd-top.cd-fade-out {
+  / if the user keeps scrolling down, the button is out of focus and becomes less visible /
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+

@@ -1,0 +1,288 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+     
+    .section-padding {
+        padding: 50px 0;
+    }
+    .logo {
+        height: 30px;
+    }
+    
+    .mainmenu {
+      margin-top: -30px;
+      float: right;
+    }
+    .is-sticky .mainmenu {
+      margin: 5px 0;
+    }
+    
+    .is-sticky .logo {
+       height: 37px;
+    }
+    .is-sticky .mainmenu {
+        float: right;
+        margin-top: -35px;
+    }
+    
+    .mainmenu ul.nav.navbar-nav li a {
+      padding: 0 8px;
+    }
+   
+    .nav.navbar-nav li {
+        margin: 0 auto;
+    }
+    .mainmenu ul.nav.navbar-nav {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+     
+    .header-text {
+      padding: 130px 0 0px;
+        text-align: center;
+        }
+    .header-text h1 {
+      font-size: 50px;
+    }
+    
+    .header-text h2 {
+      font-size: 30px;
+    }
+    .header-button {
+        margin-bottom: 30px;
+    }
+    
+    .client-list li {
+      float: left;
+      list-style: outside none none;
+      padding: 0;
+    }
+    .form-control {
+      padding: 10px 20px;
+    }
+    
+    .box a h3 {
+      margin-top: 170px;
+    }
+    
+    .is-sticky .logo, .is-sticky .mainmenu, .is-sticky .navbar-header {
+      transition: all 0.35s;
+    }
+    
+   
+    
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+   .section-padding {
+        padding: 30px 0;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    
+    p {
+        font-size: 13px;
+    } 
+    
+    .logo {
+        height: 25px;
+        margin-top: 25px;
+    }
+    .mainmenu {
+      margin-top: -25px;
+      float: none;
+        text-align: center;
+        
+    }
+  
+   .is-sticky .logo img {
+      width: auto;
+      margin-top: -15px;
+    }
+    .is-sticky .mainmenu {
+       float: right;
+        margin-bottom: 0;
+        margin-top: -5px;
+    }
+    .is-sticky .navbar-header {
+        margin-top: -35px;
+        
+    }
+   
+    .header-text {
+      padding: 20px 38px;
+    }
+    .header-text h2 {
+      font-size: 18px;
+        margin: 0;
+    }
+    
+    .header-text h1 {
+      font-size: 26px;
+        margin: 0;
+    }
+    .header-button {
+      font-size: inherit;
+      font-weight: bold;
+      margin-top: 40px;
+      padding: 5px; 
+    }
+    
+    .team-top {
+      margin-bottom: 35px;
+    }
+    .team-item {
+      padding: 0 0 30px;
+    }
+
+    .team-item ul {
+      margin-top: 5px;
+    }
+    .service-item {
+        margin-top: 40px;
+        padding: 0 25px;
+    }
+    .service-item img {
+      margin-bottom: 0;
+    }
+    
+    
+    
+   
+    
+    .box {
+      margin-bottom: 40px;
+    }
+    .box-text {
+      padding: 18px;
+    }
+    
+    
+    .about-top {
+      margin-bottom: 35px;
+        
+    }
+    .about-item {
+      margin: 5px;
+        text-align: center;
+    }
+    .about-item img {
+     margin: 0 auto;
+    }
+    .about-btn-text {
+      padding: 0;
+
+    }
+    .client-area {
+      padding: 35px 0;
+    }
+    .client-list {
+      text-align: center;
+    }
+    .client-list li {
+      padding: 0;
+        margin: 0 auto;
+    }
+    .client-list li img {
+      max-width: 100%;
+    }
+    .contact-top {
+      margin-bottom: 35px;
+    }
+    .contact-btn {
+      margin: 0 auto;
+      padding: 5px;
+      width: 185px;
+    }
+    .footer-area {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .footer-area p {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .footer-area ul {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+     .footer-area ul li {
+       float: none;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .footer-area ul li a {
+        padding-left: 0;
+    }
+
+    .navbar-toggle {
+        float: right;
+        margin: 0 auto;
+        border-color: #fff;
+    }  
+    .navbar-toggle .icon-bar {
+        background: #fff none repeat scroll 0 0;
+    }  
+    .mobile-menu-activated .mainmenu {
+       float: none;
+        text-align: center;
+    } 
+    .mobile-menu-activated ul.nav.navbar-nav {
+        background: #000 none repeat scroll 0 0;
+        text-align: center;
+    } 
+
+    .mobile-menu-activated ul.nav.navbar-nav li {
+        display: block;
+
+    }   
+    .mobile-menu-activated ul.nav.navbar-nav li: last-child a {
+        border-bottom: none;
+
+    }  
+    .mobile-menu-activated ul.nav.navbar-nav li a {
+        border-bottom: 1px solid #333;
+        padding: 3px 75px;
+    }  
+    .mobile-menu-activated .navbar-collapse {
+      box-shadow: 0 0 0;
+    } 
+    .top-area .fa {
+        font-size: 35px;
+    }
+    
+    .is-sticky .logo, .is-sticky .mainmenu, .is-sticky .navbar-header {
+      transition: all 0.35s;
+    }
+    
+    
+    .effect:after {
+        right: 50px;
+    }
+    .box a h3 {
+      margin-top: 100px;
+    }
+
+    .cd-top {
+
+      height: 25px;
+      width: 25px;
+
+    }
+    
+    
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
